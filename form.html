@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Приклад форми</title>
+</head>
+<body>
+
+<h2>Заповніть форму</h2>
+
+<form action="/обробник-форми.php" method="POST">
+    <!-- Текстове поле для введення імені -->
+    <label for="ім'я">Ім'я:</label>
+    <input type="text" id="ім'я" name="ім'я"><br>
+
+    <!-- Поле вибору для вибору статі -->
+    <label for="стать">Стать:</label>
+    <select id="стать" name="стать">
+        <option value="чоловіча">Чоловіча</option>
+        <option value="жіноча">Жіноча</option>
+    </select><br>
+
+    <!-- Поле для вuбору дати народження -->
+    <label for="дата-народження">Дата народження:</label>
+    <input type="date" id="дата-народження" name="дата-народження"><br>
+
+
+    <!-- Поле для вибору мов програмування -->
+    <label for="мови">Оберіть мови програмування, якими ви володієте:</label><br>
+    <input type="checkbox" id="мови" name="мови" value="C++">
+    <label for="мови">C++</label><br>
+    <input type="checkbox" id="мови" name="мови" value="Python">
+    <label for="мови">Python</label><br>
+    <input type="checkbox" id="мови" name="мови" value="Java">
+    <label for="мови">Java</label><br>
+
+    <!-- Поле для введення коментаря -->
+    <label for="коментар">Коментар:</label><br>
+    <textarea id="коментар" name="коментар" rows="4" cols="50"></textarea><br>
+
+    <!-- Кнопка для відправлення форми -->
+    <input type="submit" value="Надіслати">
+</form>
+
+</body>
+</html>
