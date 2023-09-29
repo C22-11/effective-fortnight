@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад С-22</title>
+    <style>
+        body {
+            background-image: url("кпі.jpeg");
+            background-size: cover; 
+            background-repeat: no-repeat;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        table {
+            border: 1px solid white; 
+            border-collapse: collapse; 
+            margin: 50 px auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+        }
+
+        table td, table th {
+            border: 1px solid white; 
+            padding: 10px;
+            color: black; 
+        }
+
+        .registration-form {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .registration-form h2 {
+            text-align: center;
+            color: black;
+        }
+
+        .registration-form label {
+            display: block;
+            text-align: center;
+            color: black; 
+        }
+
+        .registration-form input {
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .registration-form input[type="submit"] {
+            width: 100%; 
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .registration-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<img src="iszzi.png" alt="Заголовна картинка" style="width: 16%;">
+
+<!-- Форма для реєстрації -->
+<div class="registration-form">
+    <h2>Реєстрація</h2>
+    <form>
+        <label for="ім'я">Ім'я:</label>
+        <input type="text" id="ім'я" name="ім'я"><br><br>
+
+        <label for="прізвище">Прізвище:</label>
+        <input type="text" id="прізвище" name="прізвище"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="Пароль">Пароль:</label>
+        <input type="password" id="пароль" name="пароль"><br><br>
+
+        <label for="Підтвердження пароля">Підтвердження пароля:</label>
+        <input type="password" id="Підтвердження пароля" name="Підтвердження пароля"><br><br>
+
+        <input type="submit" value="Зареєструватися">
+    </form>
+</div>
+
+<!-- Таблиця 8x5 -->
+<table border="1" cellspacing="0" cellpadding="10" style="margin: 50px auto;">
+    <tr>
+        <td>День тижня/час</td>
+        <td>Понеділок</td>
+        <td>Вівторок</td>
+        <td>Середа</td>
+        <td>Четвер</td>
+        <td>П'ятниця</td>
+        <td>Субота</td>
+        <td>Неділя</td>
+    </tr>
+    <tr>
+        <td>8:30-9:15 &nbsp; 9:20-10:05</td>
+        <td>Право</td>
+        <td>ФВ</td>
+        <td>ТІМ</td>
+        <td>СР</td>
+        <td>ФВ</td>
+        <td>ЗВП</td>
+        <td>Вихідний</td>
+    </tr>
+    <tr>
+        <td>10:25-11:10 &nbsp; 11:15-12:00</td>
+        <td>ЗВП</td>
+        <td>ТІК</td>
+        <td>ТІМ</td>
+        <td>Право</td>
+        <td>Теорія сигналів</td>
+        <td>ЗВП</td>
+        <td>Вихідний</td>
+    </tr>
+    <tr>
+        <td>12:20-13:05 &nbsp; 13:10-13:55</td>
+        <td>Програмування</td>
+        <td>Теорія сигналів</td>
+        <td>Іноземна мова</td>
+        <td>ФВ</td>
+        <td>СР</td>
+        <td>СР</td>
+        <td>Вихідний</td>
+    </tr>
+    <tr>
+        <td>16:10-16:55 &nbsp; 17:00-17:45</td>
+        <td>СР</td>
+        <td>СР</td>
+        <td>СР</td>
+        <td>Програмування</td>
+        <td>СР</td>
+        <td>ПГД</td>
+        <td>Вихідний</td>
+    </tr>
+</table>
+</body>
+</html>
