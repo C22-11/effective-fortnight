@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM вправи</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Простий HTML-документ</h1>
+        <p class="important">Це параграф з класом "important".</p>
+        <ul>
+            <li>Перший пункт списку</li>
+            <li>Другий пункт списку</li>
+            <li>Третій пункт списку</li>
+        </ul>
+        <a href="#" id="link">Це посилання</a>
+        <button id="clickButton">Натисни мене</button>
+        <input type="text" id="textInput" placeholder="Введіть текст">
+    </div>
+
+    <script>
+        // Завдання 4: Додавання обробника подій для кнопки
+        var clickButton = document.getElementById('clickButton');
+        clickButton.addEventListener('click', function () {
+            alert('Ви натиснули на кнопку!');
+        });
+
+        // Завдання 5: Змініть значення текстового введення при фокусуванні
+        var textInput = document.getElementById('textInput');
+        textInput.addEventListener('focus', function () {
+            textInput.value = 'Фокус отримано!';
+        });
+    </script>
+</body>
+</html>
